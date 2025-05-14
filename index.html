@@ -18,56 +18,64 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light mt-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white mt-3">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img src="./assets/images/Logo.png" alt="Logo" height="40"
-        /></a>
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/Logo.png" alt="Logo" height="40" />
+        </a>
+
+        <!-- Toggle button -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse d-flex ms-5"
-          id="navbarSupportedContent"
-        >
-          <ul
-            class="navbar-nav ms-5 me-auto mb-2 mb-lg-0 d-flex g-4 align-items-center"
-          >
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" href="#destination">Destination</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#hotels">Hotels</a>
+              <a class="nav-link" href="#hotels">Hotels</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#flights">Flights</a>
+              <a class="nav-link" href="#flights">Flights</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#booking">Bookings</a>
+              <a class="nav-link" href="#booking">Bookings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#subscribe">Login</a>
+              <a class="nav-link" href="#subscribe">Login</a>
             </li>
           </ul>
-          <button class="btn btn-outline-dark me-2">Sign up</button>
-          <div class="nav-item dropdown">
-            <a
-              class="nav-link text-dark dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              >EN</a
-            >
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Urdu</a></li>
-              <li><a class="dropdown-item" href="#">Turkish</a></li>
-            </ul>
+
+          <!-- Right-aligned items -->
+          <div class="d-flex align-items-center">
+            <button class="btn btn-outline-dark me-2">Sign up</button>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-muted"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                EN
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Urdu</a></li>
+                <li><a class="dropdown-item" href="#">Turkish</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -113,7 +121,7 @@
 
     <!-- Services Section -->
     <section class="services py-5">
-      <div class="container text-center" id="Flights">
+      <div class="container text-center" id="flights">
         <h6 class="text-uppercase text-muted">Category</h6>
         <h2 class="mb-5">We Offer Best Services</h2>
         <div class="row g-4">
@@ -518,17 +526,23 @@
     </section>
 
     <!-- ==================== SUBSCRIBE SECTION ==================== -->
-    <section class="position-relative my-5" id="Subscribe">
+    <section class="position-relative my-5" id="subscribe">
+      <div
+        class="position-absolute"
+        style="top: -12px; right: 90px; z-index: 100"
+      >
+        <img
+          src="./assets/images/send-icon-blue.png"
+          height="50px"
+          width="auto"
+          alt=""
+          srcset=""
+        />
+      </div>
       <div
         class="container py-5 px-4 bg-light rounded-4 position-relative text-dark text-center"
         style="overflow: hidden"
       >
-        <img
-          src="./assets/images/send-bg.png"
-          alt="send"
-          class="position-absolute"
-          style="top: -20px; right: -20px; width: 100px; opacity: 0.1"
-        />
         <h3 class="fw-bold mb-3">
           Subscribe to get information, latest news and other<br />
           interesting offers about Jadoo

@@ -17,9 +17,9 @@ body {
   overflow-y: hidden;
 }
 .hero {
-  background-image: url("./header.jpg");
+  /* background-image: url("../images/header.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   padding: 100px 0;
   color: black !important;
 }
