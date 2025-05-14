@@ -1,0 +1,97 @@
+/* style.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Eater&family=Jolly+Lodger&family=Signika:wght@300..700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eater&family=Jolly+Lodger&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  font-family: poppins;
+}
+
+/* --------navbr--------- */
+.nav-content {
+  display: flex !important;
+
+  gap: 10 !important;
+}
+.navbar {
+  overflow-y: hidden;
+}
+.hero {
+  background-image: url("./header.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: black !important;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Volkhov;
+  color: #5e6282;
+}
+
+.hero h5 {
+  color: darkorange;
+  font-size: 18px;
+}
+.hero p {
+  font-size: 18px;
+  max-width: 500px;
+  color: #5e6282;
+  font-family: poppins;
+}
+
+/* ----------services------- */
+.services h2 {
+  font-family: Volkhov;
+  font-size: 50px;
+}
+.services h6 {
+  font-family: poppins;
+  font-size: 18px;
+}
+.services .card img {
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+.card-text {
+  font-family: poppins;
+  font-size: 16px;
+}
+/* destination */
+#destination .card {
+  border-radius: 12px;
+}
+#destination .card-img-top {
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+}
+/* destination */
+.destination h6 {
+  font-family: poppins;
+  font-size: 16px;
+}
+.destination h1 {
+  font-family: Volkhov;
+  font-size: 50px;
+}
+/* trip */
+.container h6 {
+  font-family: poppins;
+  font-size: 16px;
+}
+.container h1,
+h2 {
+  font-family: Volkhov;
+  font-size: 50px;
+}
+/* subscribe */
+.container h3 {
+  font-family: poppins;
+  font-size: 30px;
+}
